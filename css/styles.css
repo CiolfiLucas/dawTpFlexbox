@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #222;
+}
+
+.encabezado{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.titulo-diario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titulo-diario h1{
+    font-size: 48px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.titulo-diario p{
+    color: lightgray;
+    font-size: 18px;
+}
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu-hamburguesa{
+    font-size: 36px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.menu-navegacion{
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu-navegacion a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contenido-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.seccion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.noticia-principal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+}
+
+.noticia-principal img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.texto-noticia-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.texto-noticia-principal h2{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.texto-noticia-principal p{
+    color: #666;
+    font-size: 18px;
+}
+
+.texto-noticia-principal a{
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    max-width: 120px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px;
+    border-color: black;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.seccion-secundaria{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.tarjeta-noticia{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.tarjeta-noticia img{
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.tarjeta-noticia h3{
+    font-size: 24px;
+    color: #222;
+}
+
+.tarjeta-noticia a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.seccion-publicidad{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicidad{
+    background-color: #cfcfcf;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #444;
+}
+
+.pie-pagina{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+
+    .seccion-secundaria{
+        flex-direction: row;
+    }
+
+    .tarjeta-noticia{
+        flex: 1;
+    }
+
+    .seccion-publicidad{
+        flex-direction: row;
+    }
+
+    .publicidad{
+        flex: 1;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .menu-hamburguesa{
+        display: none;
+    }
+
+    .menu-navegacion{
+        display: flex;
+    }
+
+    .contenido-principal{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .seccion-principal{
+        flex: 2;
+    }
+
+    .seccion-secundaria{
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .seccion-publicidad{
+        flex: 1;
+        flex-direction: column;
+    }
+
+}
